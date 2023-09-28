@@ -14,10 +14,14 @@ for (let i = 0; i <=255; i++) {
 
 // 3. Find and Print Max
 function findMax(numList) {
+    max = 0
     for (let i = 0; i < numList.length; i++) {
-        console.log(i + ":" + numList[i])
-        
+        if (numList[i] > max) {
+            max = numList[i]
+        }
     }
+    console.log(max)
 }
 
 findMax([1,2,3,4,5,6,5,6,7,8])
+findMax([1,2,3,72,18])
