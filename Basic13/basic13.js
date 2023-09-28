@@ -25,3 +25,28 @@ function findMax(numList) {
 
 findMax([1,2,3,4,5,6,5,6,7,8])
 findMax([1,2,3,72,18])
+
+// 4. Array with Odds
+function arrayOdd() {
+    oddArray = []
+    for (let i =0; i <= 255; i++) {
+        if (i%2 != 0) {
+            oddArray.push(i)
+        }
+    }
+    console.log(oddArray)
+}
+arrayOdd()
+
+// 5. Greater than Y
+function greaterThanY(myArray, Y) {
+    count = 0
+    for (let i =0; i < myArray.length; i++) {
+        if (myArray[i] > Y) {
+            count++
+        }
+    }
+    console.log(count)
+}
+myArray = [4,5,2,1,2,3,6]
+greaterThanY(myArray, 3)
