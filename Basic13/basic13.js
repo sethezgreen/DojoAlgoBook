@@ -14,7 +14,7 @@ for (let i = 0; i <=255; i++) {
 
 // 3. Find and Print Max
 function findMax(numList) {
-    max = 0
+    max = Number.NEGATIVE_INFINITY
     for (let i = 0; i < numList.length; i++) {
         if (numList[i] > max) {
             max = numList[i]
@@ -50,3 +50,22 @@ function greaterThanY(myArray, Y) {
 }
 myArray = [4,5,2,1,2,3,6]
 greaterThanY(myArray, 3)
+
+// 6. Max, Min, Average
+function maxMinAverage(myArray) {
+    max = Number.NEGATIVE_INFINITY
+    min = Number.POSITIVE_INFINITY
+    average = 0
+    for (let i=0; i < myArray.length; i++) {
+        if (myArray[i] > max) {
+            max = myArray[i]
+        }
+        if (myArray[i] < min) {
+            min = myArray[i]
+        }
+        average += myArray[i]
+    }
+    console.log(max, min, (average/myArray.length))
+}
+
+maxMinAverage([4,1,2,3,5,6])
