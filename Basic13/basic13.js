@@ -80,3 +80,13 @@ function odds() {
 }
 
 odds()
+
+// 9. Iterate and Print Array
+function iterateArray(myArray) {
+    for (let i = 0; i < myArray.length; i++) {
+        console.log(myArray[i])
+    }
+}
+
+myArray = [4,5,2,1,2,3,6]
+iterateArray(myArray)
