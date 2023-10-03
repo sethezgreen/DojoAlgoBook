@@ -69,3 +69,14 @@ function maxMinAverage(myArray) {
 }
 
 maxMinAverage([4,1,2,3,5,6])
+
+// 8. Print Odds 1-255
+function odds() {
+    for (let i = 1; i <=255; i++) {
+        if (i%2 != 0) {
+            console.log(i)
+        }
+    }
+}
+
+odds()
