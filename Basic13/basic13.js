@@ -90,3 +90,15 @@ function iterateArray(myArray) {
 
 myArray = [4,5,2,1,2,3,6]
 iterateArray(myArray)
+
+// 10. Get and Print Average
+function getAverage(myArray) {
+    average = null
+    for (let i = 0; i < myArray.length; i++) {
+        average += myArray[i]
+    }
+    console.log(average/myArray.length)
+}
+
+myArray = [4,5,2,1,2,3,6]
+getAverage(myArray)
