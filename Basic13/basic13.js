@@ -102,3 +102,15 @@ function getAverage(myArray) {
 
 myArray = [4,5,2,1,2,3,6]
 getAverage(myArray)
+
+// 11. Sqaure the values
+function squareValues(myArray) {
+    newArray = []
+    for (let i = 0; i < myArray.length; i++) {
+        newArray.push(myArray[i]*myArray[i])
+    }
+    console.log(newArray)
+}
+
+myArray = [4,5,2,1,2,3,6]
+squareValues(myArray)
