@@ -70,6 +70,19 @@ function maxMinAverage(myArray) {
 
 maxMinAverage([4,1,2,3,5,6])
 
+// 7. Swap String For Array Negative Values
+function swapNegativeToString(myArray) {
+    for (let i = 0; i < myArray.length; i++) {
+        if (myArray[i] < 0) {
+            myArray[i] = "Dojo"
+        }
+    }
+    console.log(myArray)
+}
+
+myArray = [2,3,-5,"art",-8,10]
+swapNegativeToString(myArray)
+
 // 8. Print Odds 1-255
 function odds() {
     for (let i = 1; i <=255; i++) {
@@ -127,3 +140,19 @@ function zeroOutNegativeNumbers(myArray) {
 
 myArray = [2,-4,5,-29,7]
 zeroOutNegativeNumbers(myArray)
+
+// 13. Shift Array Values
+function shiftArrayValues(myArray) {
+    for (let i = 0; i< myArray.length; i++) {
+        if (myArray[i + 1]) {
+            myArray[i] = myArray[i + 1]
+        }
+        else {
+            myArray[i] = 0
+        }
+    }
+    console.log(myArray)
+}
+
+myArray = [2,-4,5,-29,7]
+shiftArrayValues(myArray)
