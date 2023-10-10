@@ -54,3 +54,12 @@ function generateCoinChange(cents) {
 }
 generateCoinChange(91)
 
+// Sigma
+function sigma(num) {
+    sum = null
+    for (let i = 1; i <= num; i++) {
+        sum += i
+    }
+    console.log(sum)
+}
+sigma(7)
