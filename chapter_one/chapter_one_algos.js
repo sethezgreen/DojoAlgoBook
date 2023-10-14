@@ -73,3 +73,9 @@ function factorial(num) {
     console.log(sum)
 }
 factorial(10)
+
+// Statistics to Doubles
+function statisticsToDoubles() {
+    roll = null
+    
+}
